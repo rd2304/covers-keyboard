@@ -1,0 +1,121 @@
+ body {
+  width:100vw 100vh;
+  font-family: Arial;
+  margin: 0 0 0 0;
+}
+
+
+      /* HEADER */
+div.header{
+  padding: 10px 0 10px 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  top: 0;
+  right: 0;
+}
+
+.link,.link_about {
+  text-decoration: none;
+  color: black;
+}
+
+.hover {
+  color:red;
+  text-decoration: underline;
+}
+
+.h1{
+width: 42vw;
+float: right;
+text-decoration: none;
+color: black;
+}
+
+div.h2{
+width: 28vw;
+float: right;
+}
+div.h3{
+width: 14vw;
+float: right;
+}
+
+html {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+
+      /* HOME IMAGE CONTAINER */
+
+.col-lg-12 {
+  height:94vh;
+  width:100vw;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+#picture {
+  object-fit: contain;
+  max-width: 99vw;
+  max-height: 94vh;
+}
+
+
+      /* ABOUT PAGE */
+
+.about_text{
+  overflow: hidden;
+  padding:  30px 0 0 20px;
+  font-size: 3.5em;
+  color: red;
+  animation-name: fadeOut;
+
+}
+
+.anim{
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+ 50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+    /* CURSOR */
+
+
+.pointer {
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    z-index: 1000000000;
+    pointer-events: none;
+}
+
+.pointer img {
+    width: 19px;
+    height: 19px;
+    position: fixed;
+}
+html {
+  cursor: none;
+}
